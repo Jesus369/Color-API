@@ -6,11 +6,12 @@ import Box from "../component/Box";
 
 class BoxContainer extends Component {
   render() {
-    return <Box />;
+    //   Passing in our loadColor function from actionCreators
+    return <Box handleClick={this.props.loadColor} color={this.props.color} />;
   }
 }
 
-// Connecting the state
+// Allowing our state to connect as props
 const mapStateToProps = state => {
   return state;
 };

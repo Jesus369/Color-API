@@ -3,7 +3,6 @@
   height: 100vh;
 }
 .wrapper {
-  background-color: black;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -16,8 +15,16 @@
 .button {
   background-color: rgb(255, 255, 255);
   border-radius: 5em;
-  width: 50%;
+  width: 25%;
   height: 40%;
   position: relative;
   top: 25%;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button: active {
+  border: 1px solid rgb(65, 65, 65);
 }
